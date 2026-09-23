@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# Career Compass AI 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Career Compass AI is an AI-powered career guidance platform designed to help students discover suitable career paths based on their interests, skills, and goals.
 
-Currently, two official plugins are available:
+## 🌟 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Choosing the right career can be difficult because students often have limited information about available career options, required skills, learning paths, and suitable projects.
 
-## React Compiler
+**Career Compass AI** provides a structured career guidance experience by helping users:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Explore suitable career options
+- Understand the skills required for different careers
+- Identify their strengths and interests
+- Take skill-based assessments
+- Get a personalized learning roadmap
+- Discover useful learning platforms and resources
+- Find project ideas for practical experience
+- Interact with an AI career guidance chatbot
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎯 Career Recommendation
+Users answer questions about their interests, skills, and preferences to receive career recommendations.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📝 Skill Assessment
+Users can evaluate their skills through assessments and identify areas that need improvement.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🗺️ Personalized Roadmap
+The platform provides a structured roadmap showing the skills and technologies users can learn for their selected career.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📚 Learning Resources
+Users can discover useful learning platforms, courses, and resources for developing their required skills.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 💡 Project Recommendations
+The platform suggests project ideas that help users gain practical experience and strengthen their portfolios.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🤖 AI Career Assistant
+An AI-powered chatbot helps users with career-related questions and guidance.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Technologies Used
+
+- React
+- TypeScript
+- Vite
+- HTML
+- CSS
+- JavaScript
+- ESLint
+
+## 📁 Project Structure
+
+```text
+career-compass-ai/
+│
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+│
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
